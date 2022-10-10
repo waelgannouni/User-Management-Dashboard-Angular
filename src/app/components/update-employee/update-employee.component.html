@@ -1,0 +1,7 @@
+
+    <form  (ngSubmit)="onUpdate()">
+        <input type="text" name="FirstName" id="FirstName" placeholder="Insert your new FirstName" [(ngModel)]="Employee.firstName"/>
+        <input type="text" name="LastName" id="LastName" placeholder="Insert your new LastName" [(ngModel)]="Employee.lastName"/>
+        <input type="email" name="Email" id="Email" placeholder="Insert your new Email" [(ngModel)]="Employee.email"/>
+        <button class="btn btn-success" type="submit">Update</button>
+    </form>

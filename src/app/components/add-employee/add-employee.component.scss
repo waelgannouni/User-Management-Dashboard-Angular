@@ -1,0 +1,25 @@
+form{
+    text-align: center;
+    border:none;
+    outline: thin black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #acacac8a;
+    margin: auto;
+    padding: 0% 5% 3% 5%;
+    width: 30%;
+    input{
+        border:none;
+        outline: thin black;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #acacac8a;
+        width: 100%;
+        padding: 5% 10%;
+        margin: 3%;
+    }button{
+        width: 100%;
+        padding: 5% 10%;
+        margin: 3%;
+        margin-top: 10%;
+        margin-bottom: 0%;
+    }
+}

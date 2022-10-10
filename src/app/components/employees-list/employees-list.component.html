@@ -1,0 +1,6 @@
+<app-add-employee [btnToggle]="btnToggle" (OnAddEmployee)="AddEmployee($event)"></app-add-employee>
+<app-single-employee 
+    *ngFor="let employee of employees" 
+    [employee]="employee"
+    (onDeleteEmployee)="DeleteEmployee(employee)">
+</app-single-employee>

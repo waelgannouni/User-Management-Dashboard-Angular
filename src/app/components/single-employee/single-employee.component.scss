@@ -1,0 +1,37 @@
+.Employee{
+    background: #f4f4f4;
+    margin: 2%;
+    padding: 1% 2%;
+    h3{
+        div{
+            width: 100%;
+            span , input{
+               margin-right:2%;
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .email{
+        border-left: 5px solid green;
+        padding-left: 1%;
+    }
+    .fa{
+        cursor: pointer;
+    }
+    input{
+        border:none;
+        outline: thin black;
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 1%;
+        margin: 1%;
+        box-shadow: 0px 0px 5px #acacac8a;
+    }
+    button{
+        margin-left: 2%;
+    }
+}

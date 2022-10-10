@@ -1,0 +1,15 @@
+<form (ngSubmit)="onAdd()" [ngClass]="{'d-none' : btnToggle == true}">
+    <div>
+        <label for="FirstName"></label>
+        <input type="text" name="FirstName" [(ngModel)]="FirstName" id="FirstName" placeholder="Add your FirstName">
+    </div>
+    <div>
+        <label for="LastName"></label>
+        <input type="text" name="LastName" [(ngModel)]="LastName" id="LastName" placeholder="Add your LastName">
+    </div>
+    <div>
+        <label for="Email"></label>
+        <input type="email" name="Email" [(ngModel)]="Email" id="Email" placeholder="Add your Email">
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>

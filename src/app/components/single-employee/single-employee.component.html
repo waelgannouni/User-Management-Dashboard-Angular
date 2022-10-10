@@ -1,0 +1,26 @@
+
+<div class="Employee" id="{{employee.id}}">
+    <h3>
+        <div [ngClass]="{'d-none' : toggle == false}">
+            <span>{{employee.firstName}}</span> 
+            <span>{{employee.lastName}}</span> 
+        </div>
+        <div [ngClass]="{'d-none' : toggle == true}">
+            <app-update-employee [employee]="employee"></app-update-employee>
+        </div>
+        <span>
+            <i 
+                class="fa fa-times mx-2" 
+                [ngStyle]="{color : 'red'}"
+                (click)="onDelete(employee)">
+            </i> 
+            <i 
+                class="fa fa-pencil mx-2" 
+                [ngStyle]="{color : 'green'}"
+                (click)="toggleEdit()">
+            </i>
+        </span>
+    </h3>
+    <p  [ngClass]="{'d-none' : toggle == false}" class="email">{{employee.email}}</p>
+ 
+</div>
